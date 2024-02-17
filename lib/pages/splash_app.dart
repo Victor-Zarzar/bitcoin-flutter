@@ -16,7 +16,7 @@ class _SplashState extends State<Splash> {
     double myWidth = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: BackGround.primaryColor,
+        backgroundColor: AppTheme.primaryColor,
         body: SizedBox(
           height: myHeight,
           width: myWidth,
@@ -25,7 +25,34 @@ class _SplashState extends State<Splash> {
               ImageOne.asset(),
               const Text(
                 'The Future',
-                style: TextStyle(fontSize: 50),
+                style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'Learn more about cryptocurrency, look to',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.normal,
+                    color: FontTextColor.primaryColor),
+              ),
+              Text(
+                'the future in IO Crypto',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.normal,
+                    color: FontTextColor.primaryColor),
+              ),
+              Container(
+                decoration: BoxDecoration(color: SplashColor.primaryColor),
+                child: const Row(
+                  children: [
+                    Text(
+                      'Create',
+                      style: TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.normal),
+                    ),
+                    Icon(Icons.arrow_forward_rounded),
+                  ],
+                ),
               ),
             ],
           ),

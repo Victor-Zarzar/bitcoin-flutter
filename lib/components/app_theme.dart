@@ -14,8 +14,14 @@ class BackGround {
   static Color get primaryColor => const Color(0xFFECEFF1);
 }
 
-class TabBarColor {
-  TabBarColor._();
+class SplashColor {
+  SplashColor._();
+
+  static Color get primaryColor => const Color(0xFFFFC107);
+}
+
+class NavbarColor {
+  NavbarColor._();
 
   static Color get primaryColor => const Color(0xFF455A64);
 
@@ -47,7 +53,7 @@ class CardColor {
 class FontTextColor {
   FontTextColor._();
 
-  static Color get primaryColor => const Color(0xFFFFFFFF);
+  static Color get primaryColor => const Color(0xFF9E9E9E);
 
   static Color get secondaryColor => const Color(0xFF263238);
 }
