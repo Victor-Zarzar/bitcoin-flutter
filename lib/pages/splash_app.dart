@@ -1,7 +1,7 @@
 import 'package:bitcoin_flutter/components/app_theme.dart';
 import 'package:bitcoin_flutter/components/assets_app.dart';
+import 'package:bitcoin_flutter/components/navbar_app.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -49,24 +49,33 @@ class _SplashState extends State<Splash> {
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: myWidth * 0.14),
-                child: Container(
-                  decoration: BoxDecoration(color: SplashColor.primaryColor),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(
-                        horizontal: myWidth * 0.05, vertical: myHeight * 0.013),
-                    child: const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Create',
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.normal),
-                        ),
-                        RotationTransition(
-                          turns: AlwaysStoppedAnimation(310 / 360),
-                          child: Icon(Icons.arrow_forward_rounded),
-                        ),
-                      ],
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Navbar()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(color: SplashColor.primaryColor),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                          horizontal: myWidth * 0.05,
+                          vertical: myHeight * 0.013),
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Create',
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.normal),
+                          ),
+                          RotationTransition(
+                            turns: AlwaysStoppedAnimation(310 / 360),
+                            child: Icon(Icons.arrow_forward_rounded),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
