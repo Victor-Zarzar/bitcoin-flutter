@@ -66,7 +66,7 @@ class _SplashState extends State<Splash> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            'Create',
+                            'Home',
                             style: TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.normal),
                           ),
