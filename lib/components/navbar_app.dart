@@ -10,7 +10,7 @@ class Navbar extends StatefulWidget {
 }
 
 class _NavbarState extends State<Navbar> {
-  final int _currentIndex = 0;
+  int _currentIndex = 0;
 
   List<Widget> pages = [
     const HomePage(),
@@ -33,11 +33,39 @@ class _NavbarState extends State<Navbar> {
           showUnselectedLabels: false,
           selectedItemColor: SplashColor.primaryColor,
           unselectedItemColor: Colors.grey,
+          onTap: ((value) {
+            setState(() {
+              _currentIndex = value;
+            });
+          }),
           items: [
             BottomNavigationBarItem(
-              icon: Image.asset('lib/assets/icons/1.1.png', height: myHeight * 0.05),
+              icon: Image.asset('lib/assets/icons/1.1.png',
+                  height: myHeight * 0.03),
               label: "",
-              activeIcon: Image.asset('lib/assets/icons/1.2.png', width: myWidth * 0.05),
+              activeIcon: Image.asset('lib/assets/icons/1.2.png',
+                  height: myHeight * 0.03),
+            ),
+            BottomNavigationBarItem(
+              icon: Image.asset('lib/assets/icons/2.1.png',
+                  height: myHeight * 0.03),
+              label: "",
+              activeIcon: Image.asset('lib/assets/icons/2.2.png',
+                  height: myHeight * 0.03),
+            ),
+            BottomNavigationBarItem(
+              icon: Image.asset('lib/assets/icons/3.1.png',
+                  height: myHeight * 0.03),
+              label: "",
+              activeIcon: Image.asset('lib/assets/icons/3.2.png',
+                  height: myHeight * 0.03),
+            ),
+            BottomNavigationBarItem(
+              icon: Image.asset('lib/assets/icons/4.1.png',
+                  height: myHeight * 0.03),
+              label: "",
+              activeIcon: Image.asset('lib/assets/icons/4.2.png',
+                  height: myHeight * 0.03),
             ),
           ],
         ),
