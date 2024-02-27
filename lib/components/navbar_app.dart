@@ -31,8 +31,8 @@ class _NavbarState extends State<Navbar> {
           currentIndex: _currentIndex,
           showSelectedLabels: false,
           showUnselectedLabels: false,
-          selectedItemColor: SplashColor.primaryColor,
-          unselectedItemColor: Colors.grey,
+          backgroundColor: BottomColor.thirdColor,
+          type: BottomNavigationBarType.fixed,
           onTap: ((value) {
             setState(() {
               _currentIndex = value;
@@ -40,32 +40,56 @@ class _NavbarState extends State<Navbar> {
           }),
           items: [
             BottomNavigationBarItem(
-              icon: Image.asset('lib/assets/icons/1.1.png',
-                  height: myHeight * 0.03),
+              icon: Image.asset(
+                'lib/assets/icons/1.1.png',
+                height: myHeight * 0.03,
+                color: BottomColor.primaryColor,
+              ),
               label: "",
-              activeIcon: Image.asset('lib/assets/icons/1.2.png',
-                  height: myHeight * 0.03),
+              activeIcon: Image.asset(
+                'lib/assets/icons/1.2.png',
+                height: myHeight * 0.03,
+                color: BottomColor.secondaryColor,
+              ),
             ),
             BottomNavigationBarItem(
-              icon: Image.asset('lib/assets/icons/2.1.png',
-                  height: myHeight * 0.03),
+              icon: Image.asset(
+                'lib/assets/icons/2.1.png',
+                height: myHeight * 0.03,
+                color: BottomColor.primaryColor,
+              ),
               label: "",
-              activeIcon: Image.asset('lib/assets/icons/2.2.png',
-                  height: myHeight * 0.03),
+              activeIcon: Image.asset(
+                'lib/assets/icons/2.2.png',
+                height: myHeight * 0.03,
+                color: BottomColor.secondaryColor,
+              ),
             ),
             BottomNavigationBarItem(
-              icon: Image.asset('lib/assets/icons/3.1.png',
-                  height: myHeight * 0.03),
+              icon: Image.asset(
+                'lib/assets/icons/3.1.png',
+                height: myHeight * 0.03,
+                color: BottomColor.primaryColor,
+              ),
               label: "",
-              activeIcon: Image.asset('lib/assets/icons/3.2.png',
-                  height: myHeight * 0.03),
+              activeIcon: Image.asset(
+                'lib/assets/icons/3.2.png',
+                height: myHeight * 0.03,
+                color: BottomColor.secondaryColor,
+              ),
             ),
             BottomNavigationBarItem(
-              icon: Image.asset('lib/assets/icons/4.1.png',
-                  height: myHeight * 0.03),
+              icon: Image.asset(
+                'lib/assets/icons/4.1.png',
+                height: myHeight * 0.03,
+                color: BottomColor.primaryColor,
+              ),
               label: "",
-              activeIcon: Image.asset('lib/assets/icons/4.2.png',
-                  height: myHeight * 0.03),
+              activeIcon: Image.asset(
+                'lib/assets/icons/4.2.png',
+                height: myHeight * 0.03,
+                color: BottomColor.secondaryColor,
+              ),
             ),
           ],
         ),

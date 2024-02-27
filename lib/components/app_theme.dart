@@ -12,12 +12,18 @@ class BackGround {
   BackGround._();
 
   static Color get primaryColor => const Color(0xFFECEFF1);
+
+  static Color get secondaryColor => const Color(0xffFBC700);
+
+  static Color get thirdColor => const Color(0xFFF35383);
 }
 
 class SplashColor {
   SplashColor._();
 
   static Color get primaryColor => const Color(0xFFFFC107);
+
+  static Color get secondaryColor => const Color(0xFF546E7A);
 }
 
 class NavbarColor {
@@ -62,4 +68,14 @@ class TextButtonColor {
   TextButtonColor._();
 
   static Color get primaryColor => const Color.fromARGB(255, 182, 6, 59);
+}
+
+class BottomColor {
+  BottomColor._();
+
+  static Color get primaryColor => const Color(0xFF9E9E9E);
+
+  static Color get secondaryColor => const Color(0xffFBC700);
+
+  static Color get thirdColor => const Color(0xFFFFFFFF);
 }
